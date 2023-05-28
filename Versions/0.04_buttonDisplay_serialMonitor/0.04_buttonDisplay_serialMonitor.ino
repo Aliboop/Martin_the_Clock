@@ -67,11 +67,11 @@
 // MAKING VARIABLES FOR THE TOUCHSCREEN
 
   //Touch For New ILI9341 TP
-  #define TS_MINX 120
-  #define TS_MAXX 900
+  #define TS_MINX 105
+  #define TS_MAXX 940
 
-  #define TS_MINY 70
-  #define TS_MAXY 920
+  #define TS_MINY 73
+  #define TS_MAXY 922
 
   // We have a status line for like, is FONA working
   #define STATUS_X 10
@@ -82,6 +82,8 @@
   // set number for how light / hard you can press the button for it to work
   #define MINPRESSURE 1
   #define MAXPRESSURE 1000
+
+
 // ** ASK ABOUT **
   //const int16_t TS_LEFT = 122, TS_RT = 929, TS_TOP = 77, TS_BOT = 884;
   const int16_t TS_TOP = 122, TS_BOT = 929, TS_LEFT = 77, TS_RT = 884;
@@ -92,6 +94,17 @@
 
   // Create a touch screen object.
   TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
+
+  //class TouchArea {
+    //public:
+  //  TouchArea(void)
+  //  {
+   //   _gfx = 0;
+  //  }
+  // Initialize the touch area.
+  //void initArea(Elegoo_GFX *gfx, int16_t)
+//}
+
 
 // MAKING VARIABLES FOR TIME
   // time related global variables.
